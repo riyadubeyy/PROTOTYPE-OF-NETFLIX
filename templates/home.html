@@ -1,0 +1,377 @@
+
+{% extends "base.html"%}
+{% load static %}
+{% block title %} home {% endblock title%}
+{% block homeactive %} active{% endblock homeactive %}
+{% block body %}
+
+<link rel="stylesheet" type="text/css" href="{% static 'css/home.css' %}">
+
+
+<header class="masthead d-flex">
+  <div class="container text-center my-auto">
+      <h1 class="mb-1">SpiderMan: No Way Home</h1>
+      <h3 class="mb-5">
+
+          <em>Coming Soon On NETFLIX</em>
+          <br>
+          
+          <em>initial release: 16 December 2021</em>
+      </h3>
+      <a class="btn btn-primary btn-xl js-scroll-trigger" href="/spidermannwh">Watch Trailer
+          Now</a>
+      </div>
+  <div class="overlay"></div>
+</header>
+
+<!-- popular  movies section start -->
+   <section id="popularmovies">
+  <div class="Container">
+      <h2 >Popular Movies</h2>
+      <div class="row Movies">
+          <div class="col-lg-4 col-md-6">
+              <div class="row">
+                  
+
+                  <div class="col-6"><a href="/movie/{{14}}"><img src="{% static 'img/joker.jpg' %}"></a></div>
+                  
+                  <div class="col-6"><a href="/movie/{{15}}"><img
+                      src="{% static 'img/godzillavskong.jpg' %}"></a></div>
+              </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+              <div class="row">
+                  <div class="col-6"><a href="/movie/{{16}}"><img
+                              src="{% static 'img/AvengersEndGame.jpg' %}"></a></div>
+
+                  <div class="col-6"><a href="/movie/{{17}}"><img
+                              src="{% static 'img/WonderWoman1984.jpeg' %}"></a></div>
+
+              </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+              <div class="row">
+                  <div class="col-6"><a href="/movie/{{18}}"><img src="{% static 'img/venom2.jpg' %}"></a></div>
+                 
+                  <div class="col-6"><a href="/movie/{{19}}"><img src="{% static 'img/civilwar.jpeg' %}"></a></div>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>  
+<!-- popular movies section end -->
+
+
+
+
+
+<!-- popular tv shows  section start -->
+<section id="populartvshows">
+    
+  <div class="Container">
+      <h2>Popular Tv Shows</h2>
+      <div class="row Movies">
+          <div class="col-lg-4 col-md-6">
+              <div class="row">
+                  <div class="col-6"><a href="/movie/{{20}}"><img src="{% static 'img/tvd.jpg' %}"></a></div>
+
+                  <div class="col-6"><a href="/movie/{{21}}"><img
+                              src="{% static 'img/queensgambit.jpg' %}"></a></div>
+              </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+              <div class="row">
+                  <div class="col-6"><a href="/movie/{{22}}"><img
+                              src="{% static 'img/bridgerton.jpg' %}"></a></div>
+
+                  <div class="col-6"><a href="/movie/{{23}}"><img
+                              src="{% static 'img/moneyheist.jpg' %}"></a></div>
+
+              </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+              <div class="row">
+                  <div class="col-6"><a href="/movie/{{24}}"><img src="{% static 'img/riverdale.jpg' %}"></a>
+                  </div>
+                  <div class="col-6"><a href="/movie/{{25}}"><img
+                              src="{% static 'img/strangerthings.jpg' %}"></a></div>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+
+<!-- popular tv shows section end -->
+
+<!-- Action & Thriller section start -->
+<section id="actionandthriller">
+<div class="Container">
+  <h2>Action & Thriller</h2>
+  <div class="row Movies">
+      <div class="col-lg-4 col-md-6">
+          <div class="row">
+              <div class="col-6"><a href="/movie/{{33}}"><img
+                          src="{% static 'img/TheDarkKnight.jpg' %}"></a></div>
+              <div class="col-6"><a href="/movie/{{34}}"><img
+                          src="{% static 'img/meninblack.jpeg' %}"></a></div>
+
+          </div>
+      </div>
+      <div class="col-lg-4 col-md-6">
+          <div class="row">
+              <div class="col-6"><a href="/movie/{{35}}"><img src="{% static 'img/Inception.jpg' %}"></a>
+              </div>
+
+              <div class="col-6"><a href="/movie/{{36}}"><img src="{% static 'img/JohnWick3.jpg' %}"></a>
+              </div>
+
+          </div>
+      </div>
+      <div class="col-lg-4 col-md-6">
+          <div class="row">
+              <div class="col-6"><a href="/movie/{{37}}"><img src="{% static 'img/F9.jpg' %}"></a></div>
+
+              <div class="col-6"><a href="/movie/{{38}}"><img src="{% static 'img/Kin.jpg' %}"></a></div>
+          </div>
+      </div>
+  </div>
+</div>
+</section>
+<!-- Action & Thriller section end -->
+
+<!-- Kids section start -->
+<section id="Kids">
+    <div class="Container">
+      <h2>Kids</h2>
+      <div class="row Movies">
+          <div class="col-lg-4 col-md-6">
+              <div class="row">
+                  <div class="col-6"><a href="/movie/{{39}}"><img
+                              src="{% static 'img/findingdory3d.jpg' %}"></a></div>
+                  <div class="col-6"><a href="/movie/{{40}}"><img
+                              src="{% static 'img/zootopiaa.jpg' %}"></a></div>
+    
+              </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+              <div class="row">
+                  <div class="col-6"><a href="/movie/{{41}}"><img src="{% static 'img/toystory4.jpg' %}"></a>
+                  </div>
+    
+                  <div class="col-6"><a href="/movie/{{42}}"><img src="{% static 'img/tomjerry.jpg' %}"></a>
+                  </div>
+    
+              </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+              <div class="row">
+                  <div class="col-6"><a href="/movie/{{43}}"><img src="{% static 'img/trollswt.jpg' %}"></a></div>
+    
+                  <div class="col-6"><a href="/movie/{{44}}"><img src="{% static 'img/beautynthebeast.jpg' %}"></a></div>
+              </div>
+          </div>
+      </div>
+    </div>
+    </section>
+    <!-- Kids section end -->
+    
+    
+
+<!-- classic Romance section start -->
+<section id="classicromance">
+  <div class="Container">
+      <h2> Classic Romance</h2>
+      <div class="row Movies">
+          <div class="col-lg-4 col-md-6">
+              <div class="row">
+                  <div class="col-6"><a href="/movie/{{45}}"><img
+                              src="{% static 'img/mebeforeyou.jpg' %}"></a></div> 
+
+                              
+                              
+
+                  <div class="col-6"><a href="/movie/{{46}}"><img src="{% static 'img/notebook.jpg' %}"></a></div>
+              </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+              <div class="row">
+                  <div class="col-6"><a href="/movie/{{47}}"><img
+                              src="{% static 'img/ageofadaline.jpg' %}"></a></div>
+
+                  <div class="col-6"><a href="/movie/{{48}}"><img
+                              src="{% static 'img/fivefeetapart.jpg' %}"></a></div>
+
+              </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+              <div class="row">
+                  <div class="col-6"><a href="/movie/{{49}}"><img
+                              src="{% static 'img/allthebrightplaces.jpg' %}"></a></div>
+                  <div class="col-6"><a href="/movie/{{50}}"><img
+                              src="{% static 'img/midnightsun.jpg' %}"></a></div>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+<!-- classic Romance section end -->
+
+<!-- horror section start -->
+<section id="horror">
+  <div class="Container">
+      <h2>Horror</h2>
+      <div class="row Movies">
+          <div class="col-lg-4 col-md-6">
+              <div class="row">
+                  <div class="col-6"><a href="/movie/{{51}}"><img
+                              src="{% static 'img/IntoTheWoods.jpg' %}"></a></div>
+                  <div class="col-6"><a href="/movie/{{52}}"><img
+                              src="{% static 'img/annabelle.jpg' %}"></a></div>
+
+              </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+              <div class="row">
+                  <div class="col-6"><a href="/movie/{{53}}"><img src="{% static 'img/theconjuring.jpeg' %}"></a>
+                  </div>
+
+                  <div class="col-6"><a href="/movie/{{54}}"><img src="{% static 'img/thegrudge.jpg' %}"></a>
+                  </div>
+
+              </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+              <div class="row">
+                  <div class="col-6"><a href="/movie/{{55}}"><img src="{% static 'img/thenun.jpeg' %}"></a></div>
+
+                  <div class="col-6"><a href="/movie/{{56}}"><img src="{% static 'img/theunholy.jpeg' %}"></a></div>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+
+<!-- horror section end -->
+
+<!-- comedy section start -->
+<section id="comedy">
+  <div class="Container">
+      <h2>Comedy</h2>
+      <div class="row Movies">
+          <div class="col-lg-4 col-md-6">
+              <div class="row">
+                  <div class="col-6"><a href="/movie/{{57}}"><img
+                              src="{% static 'img/dolittle.jpg' %}"></a></div>
+                  <div class="col-6"><a href="/movie/{{58}}"><img
+                              src="{% static 'img/yesgodyes.jpg' %}"></a></div>
+
+              </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+              <div class="row">
+                  <div class="col-6"><a href="/movie/{{59}}"><img src="{% static 'img/thewitches.jpeg' %}"></a>
+                  </div>
+
+                  <div class="col-6"><a href="/movie/{{60}}"><img src="{% static 'img/godmothered.jpg' %}"></a>
+                  </div>
+
+              </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+              <div class="row">
+                  <div class="col-6"><a href="/movie/{{61}}"><img src="{% static 'img/oceans8.jpg' %}"></a></div>
+
+                  <div class="col-6"><a href="/movie/{{62}}"><img src="{% static 'img/thesleepover.jpg' %}"></a></div>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+
+<!-- comedy section end -->
+
+
+
+<!-- Bollywood section start -->
+<section id="bollywood">
+  <div class="Container">
+      <h2>Bollywood</h2>
+      <div class="row Movies">
+          <div class="col-lg-4 col-md-6">
+              <div class="row">
+                  <div class="col-6"><a href="/movie/{{63}}"><img src="{% static 'img/Shivaay.jpg' %}"></a></div>
+
+                  <div class="col-6"><a href="/movie/{{64}}"><img
+                              src="{% static 'img/KabirSingh.jpeg' %}"></a></div>
+              </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+              <div class="row">
+                  <div class="col-6"><a href="/movie/{{65}}"><img src="{% static 'img/Padmaavat.jpg' %}"></a>
+                  </div>
+
+                  <div class="col-6"><a href="/movie/{{66}}"><img
+                              src="{% static 'img/Sooryavanshi.jpg' %}"></a></div>
+
+              </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+              <div class="row">
+                  <div class="col-6"><a href="/movie/{{67}}"><img src="{% static 'img/msdhoni.jpg' %}"></a></div>
+                  <div class="col-6"><a href="/movie/{{68}}"><img src="{% static 'img/bahubali.jpeg' %}"></a></div>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+<!-- Bollywood section end -->
+
+
+
+
+
+<!-- family section start -->
+<section id="family">
+  <div class="Container">
+      <h2>Family</h2>
+      <div class="row Movies">
+          <div class="col-lg-4 col-md-6">
+              <div class="row">
+                  <div class="col-6"><a href="/movie/{{69}}"><img
+                              src="{% static 'img/fatherhood.jpeg' %}"></a></div>
+                  <div class="col-6"><a href="/movie/{{70}}"><img
+                              src="{% static 'img/22vsearth.jpeg' %}"></a></div>
+
+              </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+              <div class="row">
+                  <div class="col-6"><a href="/movie/{{71}}"><img src="{% static 'img/theparenttrap.jpeg' %}"></a>
+                  </div>
+                  <div class="col-6"><a href="/movie/{{72}}"><img src="{% static 'img/raya.jpeg' %}"></a>
+                  </div>
+
+              </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+              <div class="row">
+                  <div class="col-6"><a href="/movie/{{73}}"><img src="{% static 'img/jumanji.jpeg' %}"></a></div>
+
+                  <div class="col-6"><a href="/movie/{{74}}"><img src="{% static 'img/matilda.jpeg' %}"></a></div>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+
+<!-- family section end -->
+
+<a class="scroll-to-top rounded js-scroll-trigger" href="#page-top">
+    <i class="fas fa-angle-up"></i>
+</a>
+
+
+<script src="{% static 'js/home.js' %}"></script>
+
+{% endblock body %}
+

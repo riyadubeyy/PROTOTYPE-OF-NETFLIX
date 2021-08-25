@@ -1,0 +1,39 @@
+{% include "head.html"%}
+{% load static %}
+<!-- {% block title %} spider man no way home {% endblock title%} -->
+<style>
+.banner{
+    background: url("/{{data.posterUrl}}");
+}
+</style>
+{% block body %}
+
+<link rel="stylesheet" type="text/css" href="{% static 'css/movies.css' %}">
+<header>
+
+    <div class="toggle"><a href="/home"><img src="{% static 'img/toggle.png' %}" alt=""></a></div>
+</header>
+<div class="banner">
+    
+    <div class="content">
+        <h2><span>{{data.title}}</span> </h2>
+            <p>
+                {{data.about}}
+            </p>
+        <a href="#" class="play" onclick="toggle();"><img src="{% static 'img/play.png' %}" alt="">watch trailer</a>
+    </div>
+</div>
+<div class="trailer">
+    <iframe class="youtube-video" width="560" height="315"  src="{{data.link}}/?enablejsapi=1&version=3&playerapiid=ytplayer" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+    <img src="{% static 'img/close.png' %}" alt="" id="pause-video" class="close" onclick="toggle();">
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+
+$('img.close').click(function(){
+	$('.youtube-video')[0].contentWindow.postMessage('{"event":"command","func":"' + 'stopVideo' + '","args":""}', '*');
+});
+
+</script>
+{% endblock body %}

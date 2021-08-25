@@ -1,0 +1,72 @@
+<html>
+  {% load static %}
+  
+<head>
+  <title>Netflix Login</title>
+  <link href="https://fonts.googleapis.com/css?family=Nunito:400,600,700" rel="stylesheet">
+
+  <link rel="stylesheet" type="text/css" href="{% static 'css/Log-in.css' %}">
+ 
+</head>
+<body>
+  <section class="background"> 
+  
+  <div class="logo">
+    <a href="#">
+        <img src=" {% static 'img/Netflix-Logo.png' %}" class="img-logo" />
+    </a>
+</div>
+
+  <div id="login_div" class="main-div">
+    <h3>LOGIN </h3>
+    <input type="email" placeholder="Email..." id="email_field" />
+    <input type="password" placeholder="Password..." id="password_field" />
+
+    <button onclick="login()">LOGIN TO ACCOUNT</button>
+  </div>
+
+  <div id="user_div" class="loggedin-div">
+    <h3>You're currently logged in</h3>
+    <p id="user_para" >Welcome You're currently logged in.</p>
+    
+    <!-- <button>CONTINUE</button> -->
+    
+    
+        <a href="/home" style="text-decoration: none;"><button >
+            CONTINUE
+          </button > </a> 
+
+          <button onclick="logout()" style="margin-top: 10px;">
+            LOGOUT
+          </button>
+     
+  
+  
+  </div>
+  </section>
+  
+   
+
+
+
+
+
+  <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
+  <script>
+    var config = {
+      apiKey: "AIzaSyA-9T0w7afbiNBHMlJc6wQf_KjEKIT9B08",
+    authDomain: "th-firebase-demo.firebaseapp.com",
+    projectId: "th-firebase-demo",
+    storageBucket: "th-firebase-demo.appspot.com",
+    messagingSenderId: "1048068229703",
+    appId: "1:1048068229703:web:3d41227333d7491130bf62",
+    measurementId: "G-NPFTJDFZDK"
+      
+    };
+    firebase.initializeApp(config);
+  </script>
+    <script src="{% static 'js/login.js' %}"></script>
+
+
+</body>
+</html>

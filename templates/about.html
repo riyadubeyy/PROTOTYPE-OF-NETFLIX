@@ -1,0 +1,117 @@
+{% extends "base.html"%}
+
+
+{% load static %}
+
+{% block title %} about {% endblock title%}
+{% block aboutactive %} active{% endblock aboutactive %}
+{% block body %}
+<link rel="stylesheet" type="text/css" href="{% static 'css/bout.css' %}">
+
+
+<header class="showcase">
+<p >Stories move us.They make us feel more emotion, see new perspectives,
+    and bring us closer to each other.<br><br> At Netflix, we want to entertain the world. Whatever your taste, and no
+    matter where you live, we give you access to best-in-class TV shows, movies and documentaries. Our members control what they want to watch, when they want it,
+    with no ads, in one simple subscription. We’re streaming in different languages and 190 countries, because great
+    stories can come from anywhere and be loved everywhere. We are the world’s biggest fans of entertainment, and we’re
+    always looking to help you find your next favorite story.<br><br>Netflix, Inc. is an American over-the-top content
+    platform and production company headquartered in Los Gatos,
+    California. Netflix was founded in 1997 by Reed Hastings and Marc Randolph in Scotts Valley, California. The
+    company's primary business is a subscription-based streaming service offering online streaming from a library of
+    films and television series, including those produced in-house. In April 2021, Netflix had 208 million
+    subscribers, including 74 million in the United States and Canada. It is available worldwide except in
+    mainland China (due to local restrictions), Syria, North Korea, and Crimea (due to US sanctions). The company has
+    offices in Canada, France, Brazil, the Netherlands, India, Japan, South Korea, and the United Kingdom. Netflix
+    is a member of the Motion Picture Association , producing and distributing content from countries all over the
+    globe.<br><br>Netflix has played a prominent role in independent film distribution. Through its division Red
+    Envelope Entertainment, Netflix licensed and distributed independent films such as Born into Brothels and
+    Sherrybaby. As of late 2006, Red Envelope Entertainment also expanded into producing original content with
+    filmmakers such as John Waters. Netflix closed Red Envelope Entertainment in 2008, in part to avoid competition
+    with its studio partners.Netflix has continued to release its original content by making the whole season
+    available at once, acknowledging changing viewer habits. This allows audiences to watch episodes at a time of their choosing rather
+    than having to watch just one episode a week at a specific scheduled time; this effectively gives its subscribers
+    freedom and control over when to watch the next episodes at their own pace. <br><br>in March 2021, Netflix announced
+    that it would work to reach net zero greenhouse gas emissions by the end of 2022, while investing in programs to
+    preserve or restore ecosystems. The company stated that it would cut emissions from its operations and electricity
+    use by 45 percent by 2030. </p>
+</header> 
+
+<div>
+  <section class="frequent">
+    <h1>Frequently Asked Questions</h1>
+    <div class="Questions">
+      <button type="button">What is Netflix? <span onClick="toggle1()" id="rot1">+</span> </button>
+      <div class="faq-answer closed" id="ans1">
+        <span>
+          Netflix is a streaming service that offers a wide variety of award-winning TV shows, movies, anime,
+          documentaries and more – on thousands of internet-connected devices.
+
+        </span>
+      </div>
+
+      <button type="button">How much does Netflix cost? <span onClick="toggle2()" id="rot2">+</span> </button>
+      <div class="faq-answer closed" id="ans2">
+        <span>
+
+          You can watch as much as you want, whenever you want, without a single ad – all you have to do is just join
+          our free membership
+          There's always something new to discover, and new TV shows and movies are added every week!
+        </span>
+      </div>
+
+      <button type="button">Where can I watch? <span onClick="toggle3()" id="rot3">+</span> </button>
+      <div class="faq-answer closed" id="ans3">
+        <span>
+
+          You can watch as much as you want, whenever you want, on your phone or laptop anywhere.
+        </span>
+      </div>
+
+      <button type="button">How do I cancel? <span onClick="toggle4()" id="rot4">+</span> </button>
+      <div class="faq-answer closed" id="ans4">
+        <span>
+          you can cancle your membership anytime you just have to signout.
+        </span>
+      </div>
+
+      <button type="button">What can I watch on Netflix? <span onClick="toggle5()" id="rot5">+</span> </button>
+      <div class="faq-answer closed" id="ans5">
+        <span>
+          Netflix offers a wide variety of latest enetertainment award-winning TV shows, movies, anime,
+          documentaries and more.
+
+        </span>
+      </div>
+
+      <button type="button">Is Netflix good for kids? <span onClick="toggle6()" id="rot6">+</span> </button>
+      <div class="faq-answer closed" id="ans6">
+        <span>
+          Netflix provides kid's category that is very safe and good for kid's they will definately enjoy it.
+        </span>
+      </div>
+
+    </div>
+  </section>
+</div>
+
+<section class="kids">
+  <div class="container">
+    <div class="left">
+      <img src="{% static 'img/kids.jpg' %}" alt="">
+    </div>
+    <div class="right">
+      <h1> kids entertainment available </h1>
+      <p>Send kids on adventures with their <br> favourite characters in a space made <br> just for them—free with
+        <br> your membership.
+      </p>
+    </div>
+  </div>
+</section>
+
+
+
+<script src="{% static 'js/about.js' %}"></script>
+
+
+{% endblock body %}

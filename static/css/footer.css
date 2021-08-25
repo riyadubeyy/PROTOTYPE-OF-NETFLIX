@@ -1,0 +1,17 @@
+.social-icon {
+    margin: 20px 10px;
+    cursor: pointer;
+    color:white;
+  }
+  
+  .social-icon:hover {
+    color: cadetblue;
+  }  
+  
+  .footer{
+      background: rgb(17, 17, 17);
+      height: 130px;
+
+  }
+ 
+  
