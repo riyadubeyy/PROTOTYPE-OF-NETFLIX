@@ -3,7 +3,6 @@
 {% load static %}
 
 <head>
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -12,15 +11,17 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.5.5/css/simple-line-icons.min.css">
-     <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
 
     <link rel="icon" href="{% static 'img/logo.png' %}">
     <title>Netflix</title>
 
 </head>
-<style>#show01{
-    background: url('/static/img/p.1.jpg');
-  }</style>
+<style>
+    #show01 {
+        background: url('/static/img/p.1.jpg');
+    }
+</style>
 
 
 <body>
@@ -51,10 +52,6 @@
             </button>
         </a>
     </div>
-
-
-
-
     <section class="for-all-text">
         <div class="some-text">
             <h1>
@@ -65,7 +62,7 @@
     </section>
 
     <section>
-       
+
         <div class="shows-panel">
             <ul class="show-list">
                 <li>
@@ -101,7 +98,7 @@
                         </div>
                     </div>
                 </li>
-                
+
                 <li>
                     <div class="one-show" id="show4">
                         <div class="show-name">
@@ -142,17 +139,18 @@
                         </div>
                     </div>
                 </li>
-                
-                
+
+
 
             </ul>
             <h3 class="more_show" style="margin-top: 20px;">Sign up and Continue Watching</h3>
-            </div>
-      </section>
-   
+        </div>
+    </section>
+
 
     {% include "footer.html"%}
 
-<script src="{% static 'js/script.js' %}"></script>
+    <script src="{% static 'js/script.js' %}"></script>
 </body>
+
 </html>
